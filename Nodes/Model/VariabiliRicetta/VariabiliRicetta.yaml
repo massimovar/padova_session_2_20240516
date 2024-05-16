@@ -1,0 +1,29 @@
+Name: VariabiliRicetta
+Id: g=15fa6f2d06e23224b7271db2dd8465cf
+Type: FolderType
+Children:
+- Name: RicettaElemento1
+  Id: g=961fdabe6f61a4282056627725e95f30
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: RicettaElemento2
+  Id: g=298dc02626a734de80721aa8cee1be98
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: RicettaElemento3
+  Id: g=ed0793a0393fdfc149f57ea469850c0b
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: RicettaElemento4
+  Id: g=4edea6c882abad151da9bca4149891cd
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: RicettaElemento5
+  Id: g=2119cc4036f2e70d086746d0aa0cdb7c
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

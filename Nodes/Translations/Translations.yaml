@@ -2,6 +2,7 @@ Name: Translations
 Type: TranslationsCategoryFolder
 Children:
 - Name: LocalizationDictionary1
+  Id: g=bbc8d135b0b2d99809f3668af14b1083
   Type: LocalizationDictionary
   DataType: String
   ValueRank: OneOrMoreDimensions
@@ -9,8 +10,97 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [1,2],
+    "Dimensions": [57,3],
     "Body": [
-     "","en-US"
+     "","en-US","it-IT",
+     "Save","Save","",
+     "Delete","Delete","",
+     "RecipeControllerDeleted","deleted","",
+     "RecipesEditorNotFound","not found","",
+     "RecipesEditorNotSet","is not set","",
+     "Load","Load","",
+     "RecipeControllerSaved","saved","",
+     "RecipeControllerCreatedAndSaved","created and saved","",
+     "Apply","Apply","",
+     "RecipeControllerEmptyRecipeName","Recipe name is empty","",
+     "RecipeControllerRecipe","Recipe","",
+     "RecipeControllerRecipeApplied","Recipe applied","",
+     "RecipeControllerRecipeLoaded","Recipe loaded","",
+     "RecipesEditorRecipeSchemaNotFound","RecipeSchema variable not found","",
+     "RecipesEditorRecipeSchemaNotSet","RecipeSchema not set","",
+     "RecipesEditorRecipeNotFound","Recipe not found","",
+     "RecipesEditorNotARecipe","is not a recipe","",
+     "RecipesEditorStoreOfSchema","Store of schema","",
+     "RecipesEditorStore","Store","",
+     "RecipesEditorNotAStore","is not a store","",
+     "RecipesEditorEditModelOfSchema","EditModel of schema","",
+     "Password","Password","",
+     "Change User","Change User","",
+     "Old password","Old password","",
+     "New password","New password","",
+     "ChangePasswordFormSuccessMessage","Password changed successfully","",
+     "Confirm password","Confirm password","",
+     "Your password has expired. Please enter a new one.","Your password has expired. Please enter a new one.","",
+     "ChangeUserFormOutputSuccessMessage","Change User successful","",
+     "Change password","Change password","",
+     "ChangeUserFormOutputErrorMessage","Authentication failed","",
+     "ChangeUserFormOutputPasswordExpired","Password expired","",
+     "ChangePasswordFormWrongOldPasswordMessage","Wrong old password","",
+     "ChangePasswordFormPasswordAlreadyUsedMessage","Password already used","",
+     "ChangePasswordFormPasswordChangedTooRecentlyMessage","Password changed too recently","",
+     "ChangePasswordFormPasswordTooShortMessage","Password too short","",
+     "ChangePasswordFormUserNotFoundMessage","User not found","",
+     "ChangePasswordFormUnsupportedOperationMessage","Unsupported operation","",
+     "ChangePasswordFormPasswordMismatchMessage","Passwords do not match","",
+     "EmptyUserList","No users in list","",
+     "Name","Name","",
+     "Groups","Groups","",
+     "Create","Create","",
+     "Cancel","Cancel","",
+     "Locale:","Locale:","",
+     "PasswordChangedTooRecently","Password changed too recently","",
+     "CannotCreateUserWithEmptyUsername","Cannot create user with empty username","",
+     "UnableToGetUsers","Unable to get users","",
+     "UserNotFound","User not found","",
+     "PasswordAlreadyUsed","Password already used in the past","",
+     "PasswordTooShort","Password too short","",
+     "UnsupportedOperation","Unsupported operation","",
+     "ChangesAppliedSuccessfully","Changes applied successfully","",
+     "UsernameAlreadyExists","Username already exists","",
+     "Button2","Button2","",
+     "ciao","hello\nalessio","ciao\nmassimo"
     ]
    }
+- Name: ImportAndExportTranslations
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/Temp/Traduzioni.csv"
+  - Class: Method
+    Name: ExportTranslations
+  - Class: Method
+    Name: ImportTranslations
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: LocalizationDictionary
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/padova_session_2_20240516/Translations/LocalizationDictionary1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"

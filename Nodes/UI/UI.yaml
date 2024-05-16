@@ -189,7 +189,7 @@ Children:
   - Name: EnableVirtualKeyboard
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
@@ -274,7 +274,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/padova_session_2_20240516/UI/Screens/Screen2"
+          Value: "/Objects/padova_session_2_20240516/UI/Screens/Ricette"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -290,7 +290,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/padova_session_2_20240516/UI/Screens/Screen3"
+          Value: "/Objects/padova_session_2_20240516/UI/Screens/GestioneUtenti"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -306,7 +306,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/padova_session_2_20240516/UI/Screens/Screen1"
+          Value: "/Objects/padova_session_2_20240516/UI/Screens/GestioneUtentiRuntime"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -369,3 +369,6 @@ Children:
       ModellingRule: Optional
       Value: 3
 - File: Screens/Screens.yaml
+- File: ChangeUserForm1/ChangeUserForm1.yaml
+- File: UserEditor1/UserEditor1.yaml
+- File: MieiWidget/MieiWidget.yaml

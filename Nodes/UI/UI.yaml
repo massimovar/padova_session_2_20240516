@@ -145,6 +145,13 @@ Children:
     Children:
     - Name: Default
       Type: ScrollBarStyle
+    - Name: DataLoggerGridStyle
+      Type: ScrollBarStyle
+      Children:
+      - Name: Size
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 50.0
   - Name: AccordionStyles
     Type: BaseObjectType
     Children:

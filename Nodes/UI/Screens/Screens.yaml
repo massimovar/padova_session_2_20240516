@@ -1,0 +1,15 @@
+Name: Screens
+Type: ScreensCategoryFolder
+Children:
+- Name: Datalogging
+  Id: g=863252cc817fbeb46a138ed1210e5a0b
+  Supertype: Screen
+  ReferenceType: HasComponent
+- Name: Screen2
+  Id: g=fa7c135faf84e0cb6febedc9349365a8
+  Supertype: Screen
+  ReferenceType: HasComponent
+- Name: Screen3
+  Id: g=146dee4aa93f4e54b87f5d98255e04e8
+  Supertype: Screen
+  ReferenceType: HasComponent
